@@ -1,0 +1,81 @@
+
+
+html, body {
+  background-color: #f4ecf0 !important;
+  color: #2b1d24 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.nombre-cursiva {
+  font-family: 'Marck Script', cursive !important;
+  font-size: 3.2rem !important;
+  color: #3a222f !important;
+  font-weight: 400 !important;
+}
+
+.hero-subtitle, p.text-muted {
+  text-transform: lowercase !important;
+  font-weight: 500 !important;
+  color: #7a5c6d !important;
+  font-size: 0.95rem !important;
+}
+
+h2, .section-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+  color: #593547 !important;
+  text-transform: lowercase !important;
+  letter-spacing: 1px;
+}
+
+.card {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(89, 53, 71, 0.15) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 20px rgba(89, 53, 71, 0.08) !important;
+  overflow: hidden !important;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px !important;
+}
+
+.card h3, .card-title, .card h5 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: #3a222f !important;
+  text-transform: lowercase !important;
+}
+
+.card p, .card-text {
+  text-transform: lowercase !important;
+  font-weight: 400 !important;
+  color: #6e5562 !important;
+  font-size: 0.85rem !important;
+}
+.card .btn, .btn-primary {
+  background-color: #593547 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+  padding: 6px 16px !important;
+  text-transform: lowercase !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.card .btn:hover {
+  background-color: #73465c !important;
+}
+
+.navbar {
+  background-color: #2b1d24 !important;
+}
+
+.navbar-brand, .nav-link {
+  color: #f4ecf0 !important;
+}

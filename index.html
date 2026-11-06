@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FUENTE GOOGLE FONTS -->
+     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mi Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#encabezado">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. ENCABEZADO -->
+    <header id="encabezado" class="container text-center py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="fotodeperfil.jpeg" alt="Foto de perfil" class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                <h1 class="mt-3">Yanina Gomez Araujo</h1>
+                <p class="text-muted">Desarrolladora Web</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. SECCIÓN PORTFOLIO (Tus proyectos) -->
+    <section id="portfolio" class="container py-5">
+        <h2 class="text-center mb-4 section-title">Portfolio</h2>
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="blog.jpg" class="card-img-top" alt="Blog Personal" style="height: 180px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Blog Personal</h5>
+                        <p class="card-text">Un espacio donde comparto mis reflexiones, aprendizajes y experiencias sobre tecnologia y desarrolo web.</p>
+                        <a href="https://jolly-profiterole-21362d.netlify.app" class="btn btn-primary btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="aventura.jpg" class="card-img-top" alt="Crea tu propia aventura" style="height: 180px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Crea tu propia aventura</h5>
+                        <p class="card-text">Un juego interactivo donde cada clic define el destino del personaje.</p>
+                        <a href="https://cozy-genie-98a1cc.netlify.app" class="btn btn-primary btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="landing.jpg" class="card-img-top" alt="Landing Page" style="height: 180px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Landing Page</h5>
+                        <p class="card-text">Una galeria web visual y atractiva diseñada para destacar los paisajes mas imponentes y conectar con la naturaleza.</p>
+                        <a href="https://dulcet-blancmange-f01d0c.netlify.app" class="btn btn-primary btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="container py-5 bg-light rounded">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>Acerca de mí</h2>
+                <hr class="w-25 mx-auto">
+                <p class="lead">Hola, soy Yanina, estudiante de programación.
+                    Me apasiona el desarrollo web y la creacion de soluciones digitales interactivas, transformando ideas en codigo limpio y funcional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN CONTACTO -->
+    <section id="contacto" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Contacto</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER (Pie de página) -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 - Yanina. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
